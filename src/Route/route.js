@@ -10,5 +10,6 @@ router.delete('/api/del-resto/:restoid', restoController.deleteResto)
 
 router.put('/api/update-resto/:restoid', restoController.restoUpdate)
 
+router.post('/api/rate-resto/:restoid', restoController.rateResto)
 
 module.exports = router

@@ -13,12 +13,14 @@ const restoSchema = new mongoose.Schema({
         type:{type: String, required: true},
         coordinates:[]
     },
-    avg_ratings:{
-        type: Number,
+    ratings:[],
+    numberOfRatings:{
+        type:Number,
         default:0
+
     },
-    ratings:{
-        type: Number,
+    avg_rating:{
+        type:Number,
         default:0
     },
     isDeleted:{
